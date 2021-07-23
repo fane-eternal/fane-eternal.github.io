@@ -2230,7 +2230,7 @@ input, select, textarea {
 				border-radius: 50%;
 				border: 3px solid white;
 			}
-			#ba_cert img{
+			#ba_cert, #agile_cert img{
 				width: 70%;
 				height: 70%;
 				margin-right: auto;
