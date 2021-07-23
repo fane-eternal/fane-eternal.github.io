@@ -191,6 +191,23 @@ input, select, textarea {
 			color: inherit;
 			border-bottom: 0;
 		}
+		#future a{
+		-moz-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+		-webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+		-ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+		transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+		color: inherit;
+		text-decoration: none;
+		scroll-behavior: smooth;
+		}
+		#future a:hover {
+			border-bottom-color: transparent;
+			color: #9bf1ff !important;
+		}
+
+		#future a:active {
+			color: #53e3fb !important;
+		}
 
 	h1 {
 		font-size: 2.5em;
@@ -2206,12 +2223,19 @@ input, select, textarea {
 			width: 100%;
 		}
 
-			.image.main img {
+			 #me img{
 				width: 20%;
 				height: 20%;
 				margin-right: auto;
 				margin-left: auto;
 				border-radius: 50%;
+				border: 3px solid white;
+			}
+			#ba_cert img{
+				width: 70%;
+				height: 70%;
+				margin-right: auto;
+				margin-left: auto;
 				border: 3px solid white;
 			}
 
@@ -2830,7 +2854,19 @@ input, select, textarea {
 				filter: blur(0.5em);
 				opacity: 0;
 			}
+			#future 
+			#future.is-transitioning {
+				-moz-transform: scale(0.95);
+				-webkit-transform: scale(0.95);
+				-ms-transform: scale(0.95);
+				transform: scale(0.95);
+				-moz-filter: blur(0.5em);
+				-webkit-filter: blur(0.5em);
+				-ms-filter: blur(0.5em);
+				filter: blur(0.5em);
+				opacity: 1 !important; 
 
+			}
 			.tiles article:nth-child(4n - 1), .tiles article:nth-child(4n - 2) {
 				width: 60%;
 			}
